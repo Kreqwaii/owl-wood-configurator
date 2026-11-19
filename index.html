@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owl-Wood | Конфигуратор столов из слэбов и массива на заказ в Москве</title>
+  <meta name="description" content="Интерактивный конфигуратор столов из цельных слэбов, массива и эпоксидной смолы для московской мастерской Owl-Wood. Подбор породы дерева, габаритов, заливки и подстолья с ориентировочным расчетом сметы.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'%3E%3Crect width='32' height='32' rx='6' fill='%231E1A17'/%3E%3Cpath d='M8 10.5C8 8.5 11.5 7 16 7C20.5 7 24 8.5 24 10.5V21.5C24 23.5 20.5 25 16 25C11.5 25 8 23.5 8 21.5V10.5Z' stroke='%23F6F3EE' stroke-width='1.6'/%3E%3Ccircle cx='12.5' cy='14.5' r='2' stroke='%238C4A27' stroke-width='1.6'/%3E%3Ccircle cx='19.5' cy='14.5' r='2' stroke='%238C4A27' stroke-width='1.6'/%3E%3Cpath d='M16 17L14.8 19H17.2L16 17Z' stroke='%23F6F3EE' stroke-width='1.6' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Owl-Wood на главную">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 10C6 7.8 10.5 6 16 6C21.5 6 26 7.8 26 10V22C26 24.2 21.5 26 16 26C10.5 26 6 24.2 6 22V10Z"/>
+            <path d="M11 6.5L13 9.5M21 6.5L19 9.5"/>
+            <circle cx="12" cy="14.5" r="2.2"/>
+            <circle cx="20" cy="14.5" r="2.2"/>
+            <path d="M16 17.2L14.5 19.6H17.5L16 17.2Z"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">OWL-WOOD</span>
+          <span class="brand-sub">Столярная мастерская, Москва</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#configurator">Конфигуратор</a>
+        <a href="#catalog">В наличии</a>
+        <a href="#process">Этапы заказа</a>
+        <a href="#contacts">Мастерская</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-phone" href="tel:+79646314324">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span class="mono-num">+7 (964) 631-43-24</span>
+        </a>
+        <a class="btn btn-primary btn-sm" href="#configurator">Собрать стол</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+            <span>Производство на 1-й Фрезерной, 2/1с11</span>
+          </div>
+          <h1>Столы из слэбов и массива по вашим габаритам</h1>
+          <p class="hero-lead">
+            Мастерская Павла Борисова изготавливает обеденные, журнальные и письменные столы из высушенных слэбов ценных пород с заливкой полимерами и натуральными масляными покрытиями. Соберите конфигурацию на чертеже и получите ориентировочную смету до подбора конкретного слэба.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#configurator">
+              <span>Открыть конфигуратор</span>
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14"/>
+                <path d="M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a class="btn btn-outline" href="#catalog">Столы в наличии</a>
+          </div>
+        </div>
+
+        <aside class="hero-facts" aria-label="Ключевые показатели мастерской">
+          <div class="fact-card">
+            <div class="fact-label">Срок изготовления</div>
+            <div class="fact-value mono-num">5-30 дней</div>
+            <div class="fact-note">В рабочих днях по договору</div>
+          </div>
+          <div class="fact-card">
+            <div class="fact-label">Гарантия на изделия</div>
+            <div class="fact-value mono-num">12 мес.</div>
+            <div class="fact-note">Официальный договор и ТЗ</div>
+          </div>
+          <div class="fact-card">
+            <div class="fact-label">Готовых в каталоге</div>
+            <div class="fact-value mono-num">353+</div>
+            <div class="fact-note">Дуб, карагач, бук, платан, орех</div>
+          </div>
+          <div class="fact-card">
+            <div class="fact-label">Режим шоурума</div>
+            <div class="fact-value mono-num">09:00-22:00</div>
+            <div class="fact-note">Ежедневно без выходных</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="configurator" class="configurator-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Инженерный подбор параметров</div>
+            <h2>Конфигуратор стола из слэба</h2>
+          </div>
+          <div class="presets-bar" aria-label="Быстрые пресеты конфигураций">
+            <span class="presets-title">Пресеты:</span>
+            <button type="button" class="preset-chip is-active" data-preset="dining-river">Обеденный Карагач 220x95</button>
+            <button type="button" class="preset-chip" data-preset="solid-oak">Цельный Дуб 280x105</button>
+            <button type="button" class="preset-chip" data-preset="desk-walnut">Письменный Орех 160x76</button>
+            <button type="button" class="preset-chip" data-preset="coffee-poplar">Журнальный Кап 110x66</button>
+          </div>
+        </div>
+
+        <div class="config-workspace">
+          <!-- Левая колонка: чертеж сверху в масштабе + спецификация -->
+          <div class="blueprint-column">
+            <div class="blueprint-card">
+              <div class="blueprint-toolbar">
+                <div class="blueprint-title">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <path d="M3 9h18M9 21V9"/>
+                  </svg>
+                  <span>Чертеж изделия: вид сверху в масштабе</span>
+                </div>
+                <div class="blueprint-toggles">
+                  <label class="toggle-check">
+                    <input type="checkbox" id="toggle-base-overlay" checked>
+                    <span>Проекция подстолья</span>
+                  </label>
+                  <label class="toggle-check">
+                    <input type="checkbox" id="toggle-grid" checked>
+                    <span>Сетка 20 см</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="svg-stage">
+                <svg id="slab-blueprint" viewBox="0 0 760 390" role="img" aria-label="Живой масштабный чертеж стола сверху">
+                  <defs>
+                    <pattern id="bp-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E8E1D6" stroke-width="1"/>
+                    </pattern>
+                    <pattern id="bp-grid-fine" width="10" height="10" patternUnits="userSpaceOnUse">
+                      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#F1ECE4" stroke-width="0.6"/>
+                    </pattern>
+                    <linearGradient id="wood-karagach" x1="0" y1="0" x2="1" y2="0.18">
+                      <stop offset="0%" stop-color="#A86E44"/>
+                      <stop offset="45%" stop-color="#8F5733"/>
+                      <stop offset="100%" stop-color="#B98256"/>
+                    </linearGradient>
+                    <linearGradient id="wood-oak" x1="0" y1="0" x2="1" y2="0.15">
+                      <stop offset="0%" stop-color="#C8A273"/>
+                      <stop offset="50%" stop-color="#B68B59"/>
+                      <stop offset="100%" stop-color="#CFA97A"/>
+                    </linearGradient>
+                    <linearGradient id="wood-walnut" x1="0" y1="0" x2="1" y2="0.2">
+                      <stop offset="0%" stop-color="#5C3D2E"/>
+                      <stop offset="55%" stop-color="#472D21"/>
+                      <stop offset="100%" stop-color="#6B4A39"/>
+                    </linearGradient>
+                    <linearGradient id="wood-poplar" x1="0" y1="0" x2="1" y2="0.15">
+                      <stop offset="0%" stop-color="#D4BC96"/>
+                      <stop offset="45%" stop-color="#BC9B6C"/>
+                      <stop offset="100%" stop-color="#DEC8A4"/>
+                    </linearGradient>
+                    <linearGradient id="resin-clear" x1="0" y1="0" x2="1" y2="0.3">
+                      <stop offset="0%" stop-color="#DCE8E8" stop-opacity="0.72"/>
+                      <stop offset="50%" stop-color="#C5D8D9" stop-opacity="0.58"/>
+                      <stop offset="100%" stop-color="#E2ECEB" stop-opacity="0.76"/>
+                    </linearGradient>
+                    <linearGradient id="resin-smoke" x1="0" y1="0" x2="1" y2="0.3">
+                      <stop offset="0%" stop-color="#5B5754" stop-opacity="0.76"/>
+                      <stop offset="50%" stop-color="#413D3A" stop-opacity="0.68"/>
+                      <stop offset="100%" stop-color="#696460" stop-opacity="0.78"/>
+                    </linearGradient>
+                    <linearGradient id="resin-black" x1="0" y1="0" x2="1" y2="0.2">
+                      <stop offset="0%" stop-color="#221E1B" stop-opacity="0.98"/>
+                      <stop offset="50%" stop-color="#181512" stop-opacity="0.98"/>
+                      <stop offset="100%" stop-color="#2A2522" stop-opacity="0.98"/>
+                    </linearGradient>
+                    <clipPath id="slab-clip">
+                      <rect id="slab-clip-rect" x="0" y="0" width="500" height="200" rx="4"/>
+                    </clipPath>
+                  </defs>
+
+                  <!-- Чертежная подложка -->
+                  <rect x="0" y="0" width="760" height="390" fill="#FCFBF8"/>
+                  <g id="grid-layer">
+                    <rect x="0" y="0" width="760" height="390" fill="url(#bp-grid-fine)"/>
+                    <rect x="0" y="0" width="760" height="390" fill="url(#bp-grid)"/>
+                  </g>
+
+                  <!-- Рамка поля чертежа -->
+                  <rect x="14" y="14" width="732" height="362" fill="none" stroke="#DDD5C8" stroke-width="1"/>
+
+                  <!-- Угловой технический штамп чертежа -->
+                  <g id="blueprint-stamp" transform="translate(26, 26)">
+                    <text x="0" y="10" fill="#7A6E63" font-family="JetBrains Mono, monospace" font-size="10.5">МАСШТАБ 1:10 | ПРОЕКЦИЯ СВЕРХУ</text>
+                    <text id="stamp-meta" x="0" y="25" fill="#1E1A17" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600">220 x 95 СМ | 2.09 М2</text>
+                  </g>
+
+                  <!-- Группа столешницы в масштабе -->
+                  <g id="table-drawing-group"></g>
+
+                  <!-- Размерные выносные линии -->
+                  <g id="dimension-lines"></g>
+
+                  <!-- Масштабный отрезок справа внизу -->
+                  <g transform="translate(598, 344)">
+                    <line x1="0" y1="10" x2="110" y2="10" stroke="#5C534B" stroke-width="1.2"/>
+                    <line x1="0" y1="5" x2="0" y2="15" stroke="#5C534B" stroke-width="1.2"/>
+                    <line x1="55" y1="7" x2="55" y2="13" stroke="#5C534B" stroke-width="1"/>
+                    <line x1="110" y1="5" x2="110" y2="15" stroke="#5C534B" stroke-width="1.2"/>
+                    <text x="0" y="2" fill="#5C534B" font-family="JetBrains Mono, monospace" font-size="9.5">0</text>
+                    <text x="48" y="2" fill="#5C534B" font-family="JetBrains Mono, monospace" font-size="9.5">30</text>
+                    <text x="96" y="2" fill="#5C534B" font-family="JetBrains Mono, monospace" font-size="9.5">60 см</text>
+                  </g>
+                </svg>
+              </div>
+
+              <div class="blueprint-metrics">
+                <div class="metric-item">
+                  <span class="metric-key">Габариты</span>
+                  <span class="metric-val mono-num" id="metric-dims">220 x 95 см</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-key">Площадь столешницы</span>
+                  <span class="metric-val mono-num" id="metric-area">2.09 м2</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-key">Вместимость</span>
+                  <span class="metric-val mono-num" id="metric-seats">6-8 персон</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-key">Расчетная масса</span>
+                  <span class="metric-val mono-num" id="metric-weight">~78 кг</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Блок сметы и отправки заявки -->
+            <div class="estimate-card">
+              <div class="estimate-header">
+                <div>
+                  <div class="estimate-label">Ориентировочная смета проекта</div>
+                  <div class="estimate-price mono-num" id="total-price">148 500 ₽</div>
+                </div>
+                <div class="estimate-meta">
+                  <div class="meta-pill">
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10"/>
+                      <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                    <span>Срок: <strong class="mono-num" id="lead-time">14-20 раб. дней</strong></span>
+                  </div>
+                  <div class="meta-note mono-num" id="prepay-note">Предоплата 50% по договору: 74 250 ₽</div>
+                </div>
+              </div>
+
+              <div class="cost-breakdown" id="cost-breakdown">
+                <div class="cost-row">
+                  <span>Слэб (<span id="bd-wood">Карагач</span>, <span id="bd-area">2.09 м2</span>) и столярная обработка</span>
+                  <span class="mono-num" id="cost-wood">99 000 ₽</span>
+                </div>
+                <div class="cost-row">
+                  <span>Полимерная заливка (<span id="bd-resin">Прозрачная река</span>)</span>
+                  <span class="mono-num" id="cost-resin">27 500 ₽</span>
+                </div>
+                <div class="cost-row">
+                  <span>Подстолье (<span id="bd-base">Лофт трапеция</span>)</span>
+                  <span class="mono-num" id="cost-base">22 000 ₽</span>
+                </div>
+              </div>
+
+              <div class="spec-box">
+                <div class="spec-box-head">
+                  <span>Спецификация для согласования</span>
+                  <button type="button" class="btn-link" id="copy-spec-btn">
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="9" y="9" width="13" height="13" rx="2"/>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                    </svg>
+                    <span id="copy-spec-label">Скопировать спецификацию</span>
+                  </button>
+                </div>
+                <pre class="spec-text" id="spec-summary"></pre>
+              </div>
+
+              <form id="order-form" class="order-form" novalidate>
+                <div class="order-form-title">Быстрая заявка в мастерскую на zakaz@owl-wood.ru</div>
+                <div class="form-row">
+                  <div class="field">
+                    <label for="client-name">Ваше имя</label>
+                    <input type="text" id="client-name" name="name" placeholder="Например, Алексей" autocomplete="name" required>
+                  </div>
+                  <div class="field">
+                    <label for="client-phone">Телефон или мессенджер</label>
+                    <input type="tel" id="client-phone" name="phone" placeholder="+7 (999) 000-00-00" autocomplete="tel" required>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="client-comment">Пожелания к слэбу или адресу доставки (необязательно)</label>
+                  <input type="text" id="client-comment" name="comment" placeholder="Живой край или ровная кромка, матовый лак, доставка по Москве">
+                </div>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary btn-full">Отправить расчет на zakaz@owl-wood.ru</button>
+                </div>
+                <p class="form-disclaimer">
+                  Расчет носит ориентировочный характер. Точная стоимость фиксируется в договоре после выбора слэба в мастерской или по фото.
+                </p>
+              </form>
+
+              <div class="order-confirmation" id="order-confirmation" hidden>
+                <div class="confirm-head">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22 4 12 14.01 9 11.01"/>
+                  </svg>
+                  <div>
+                    <div class="confirm-title">Заявка сформирована: <span class="mono-num" id="confirm-id">OWL-4821</span></div>
+                    <div class="confirm-sub">Спецификация подготовлена к отправке в Owl-Wood (zakaz@owl-wood.ru)</div>
+                  </div>
+                </div>
+                <div class="confirm-actions">
+                  <a class="btn btn-primary btn-sm" id="mailto-trigger" href="mailto:zakaz@owl-wood.ru">Открыть в почтовом клиенте</a>
+                  <button type="button" class="btn btn-outline btn-sm" id="confirm-copy-btn">Скопировать текст заявки</button>
+                  <button type="button" class="btn-link" id="reset-confirm-btn">Изменить контакты</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Правая колонка: панель выбора параметров -->
+          <div class="controls-column" aria-label="Параметры конфигурации стола">
+            <!-- 1. Тип изделия -->
+            <div class="control-group">
+              <div class="control-head">
+                <span class="control-step mono-num">01</span>
+                <h3>Тип изделия</h3>
+              </div>
+              <div class="option-grid cols-2" id="type-options">
+                <button type="button" class="option-card is-selected" data-group="type" data-value="dining">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 8h18v3H3z"/>
+                    <path d="M6 11v8M18 11v8"/>
+                  </svg>
+                  <span class="opt-title">Обеденный стол</span>
+                  <span class="opt-sub">Высота 75 см</span>
+                </button>
+                <button type="button" class="option-card" data-group="type" data-value="coffee">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 12h16v2.5H4z"/>
+                    <path d="M7 14.5V19M17 14.5V19"/>
+                  </svg>
+                  <span class="opt-title">Журнальный</span>
+                  <span class="opt-sub">Высота 45 см</span>
+                </button>
+                <button type="button" class="option-card" data-group="type" data-value="desk">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 7h18v2.5H3z"/>
+                    <path d="M5 9.5V19M19 9.5V19M5 13h14"/>
+                  </svg>
+                  <span class="opt-title">Письменный</span>
+                  <span class="opt-sub">Высота 75 см</span>
+                </button>
+                <button type="button" class="option-card" data-group="type" data-value="top">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 10.5h18v3H3z"/>
+                    <path d="M6 10.5c1.5-1 3 1 4.5 0s3-1 4.5 0 3 1 3 0"/>
+                  </svg>
+                  <span class="opt-title">Столешница</span>
+                  <span class="opt-sub">Без подстолья</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 2. Порода дерева -->
+            <div class="control-group">
+              <div class="control-head">
+                <span class="control-step mono-num">02</span>
+                <h3>Порода дерева</h3>
+              </div>
+              <div class="option-grid cols-2" id="wood-options">
+                <button type="button" class="option-card swatch-card is-selected" data-group="wood" data-value="karagach">
+                  <span class="swatch swatch-karagach" aria-hidden="true"></span>
+                  <span class="opt-body">
+                    <span class="opt-title">Карагач</span>
+                    <span class="opt-sub">Контрастная волна, теплый медово-коричневый</span>
+                  </span>
+                </button>
+                <button type="button" class="option-card swatch-card" data-group="wood" data-value="oak">
+                  <span class="swatch swatch-oak" aria-hidden="true"></span>
+                  <span class="opt-body">
+                    <span class="opt-title">Дуб</span>
+                    <span class="opt-sub">Плотная классическая текстура, светлый тон</span>
+                  </span>
+                </button>
+                <button type="button" class="option-card swatch-card" data-group="wood" data-value="walnut">
+                  <span class="swatch swatch-walnut" aria-hidden="true"></span>
+                  <span class="opt-body">
+                    <span class="opt-title">Орех</span>
+                    <span class="opt-sub">Глубокий шоколадный оттенок со светлой заболонью</span>
+                  </span>
+                </button>
+                <button type="button" class="option-card swatch-card" data-group="wood" data-value="poplar">
+                  <span class="swatch swatch-poplar" aria-hidden="true"></span>
+                  <span class="opt-body">
+                    <span class="opt-title">Каповый тополь</span>
+                    <span class="opt-sub">Редкий завихренный рисунок капа, светлый янтарь</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 3. Заливка эпоксидной смолой -->
+            <div class="control-group">
+              <div class="control-head">
+                <span class="control-step mono-num">03</span>
+                <h3>Заливка эпоксидной смолой</h3>
+              </div>
+              <div class="option-grid cols-2" id="resin-options">
+                <button type="button" class="option-card swatch-card" data-group="resin" data-value="none">
+                  <span class="swatch swatch-none" aria-hidden="true"></span>
+                  <span class="opt-body">
+                    <span class="opt-title">Без смолы</span>
+                    <span class="opt-sub">Цельный слэб с натуральными трещинами</span>
+                  </span>
+                </button>
+                <button type="button" class="option-card swatch-card is-selected" data-group="resin" data-value="clear">
+                  <span class="swatch swatch-clear" aria-hidden="true"></span>
+                  <span class="opt-body">
+                    <span class="opt-title">Прозрачная река</span>
+                    <span class="opt-sub">Виден живой край слэба внутри заливки</span>
+                  </span>
+                </button>
+                <button type="button" class="option-card swatch-card" data-group="resin" data-value="smoke">
+                  <span class="swatch swatch-smoke" aria-hidden="true"></span>
+                  <span class="opt-body">
+                    <span class="opt-title">Дымчатая</span>
+                    <span class="opt-sub">Полупрозрачный графитовый оттенок</span>
+                  </span>
+                </button>
+                <button type="button" class="option-card swatch-card" data-group="resin" data-value="black">
+                  <span class="swatch swatch-black" aria-hidden="true"></span>
+                  <span class="opt-body">
+                    <span class="opt-title">Черная матовая</span>
+                    <span class="opt-sub">Глухой сатиновый акцент</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 4. Габариты столешницы -->
+            <div class="control-group">
+              <div class="control-head">
+                <span class="control-step mono-num">04</span>
+                <h3>Габариты изделия</h3>
+              </div>
+              <div class="sliders-stack">
+                <div class="slider-block">
+                  <div class="slider-top">
+                    <label for="range-length">Длина столешницы</label>
+                    <output class="slider-val mono-num" id="out-length" for="range-length">220 см</output>
+                  </div>
+                  <input type="range" id="range-length" min="100" max="320" step="5" value="220">
+                  <div class="slider-scale mono-num">
+                    <span>100 см</span>
+                    <span>180 см</span>
+                    <span>240 см</span>
+                    <span>320 см</span>
+                  </div>
+                </div>
+
+                <div class="slider-block">
+                  <div class="slider-top">
+                    <label for="range-width">Ширина столешницы</label>
+                    <output class="slider-val mono-num" id="out-width" for="range-width">95 см</output>
+                  </div>
+                  <input type="range" id="range-width" min="60" max="120" step="1" value="95">
+                  <div class="slider-scale mono-num">
+                    <span>60 см</span>
+                    <span>80 см</span>
+                    <span>100 см</span>
+                    <span>120 см</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Подстолье -->
+            <div class="control-group" id="base-control-group">
+              <div class="control-head">
+                <span class="control-step mono-num">05</span>
+                <h3>Подстолье</h3>
+                <span class="control-note" id="base-disabled-note" hidden>Для столешницы не включено</span>
+              </div>
+              <div class="option-grid cols-2" id="base-options">
+                <button type="button" class="option-card is-selected" data-group="base" data-value="trapezoid">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 19L8 6h8l3 13H5z"/>
+                  </svg>
+                  <span class="opt-title">Лофт трапеция</span>
+                  <span class="opt-sub">Профильная труба, порошковая покраска</span>
+                </button>
+                <button type="button" class="option-card" data-group="base" data-value="u-shape">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="6" y="6" width="12" height="13"/>
+                  </svg>
+                  <span class="opt-title">П-образное</span>
+                  <span class="opt-sub">Строгая геометрия рамного профиля</span>
+                </button>
+                <button type="button" class="option-card" data-group="base" data-value="cross">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 6l14 13M19 6L5 19M4 6h16M4 19h16"/>
+                  </svg>
+                  <span class="opt-title">Крест</span>
+                  <span class="opt-sub">Диагональная опора повышенной жесткости</span>
+                </button>
+                <button type="button" class="option-card" data-group="base" data-value="solid">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 6h4v13H5zM15 6h4v13h-4zM9 11h6"/>
+                  </svg>
+                  <span class="opt-title">Массив</span>
+                  <span class="opt-sub">Деревянные опоры в тон столешницы</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalog" class="catalog-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Примеры из каталога owl-wood.ru</div>
+            <h2>Готовые столы из слэбов в наличии</h2>
+          </div>
+          <p class="section-sub">
+            В шоуруме представлено более 350 готовых изделий. Подстолье из металла «Стандарт» входит в стоимость готовых моделей.
+          </p>
+        </div>
+
+        <div class="catalog-grid">
+          <article class="catalog-card">
+            <div class="catalog-top">
+              <span class="art-badge mono-num">Арт. 2047</span>
+              <span class="stock-badge">В наличии</span>
+            </div>
+            <h3>Большой светлый стол из слэба дуба</h3>
+            <div class="catalog-specs mono-num">298 x 93-102 см</div>
+            <p class="catalog-note">Подстолье из металла «Стандарт» входит в стоимость</p>
+            <div class="catalog-bottom">
+              <span class="catalog-price mono-num">385 000 ₽</span>
+              <button type="button" class="btn btn-outline btn-sm load-sample-btn" data-type="dining" data-wood="oak" data-resin="none" data-length="300" data-width="98" data-base="u-shape">
+                Примерить размер
+              </button>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-top">
+              <span class="art-badge mono-num">Арт. 2030</span>
+              <span class="stock-badge">В наличии</span>
+            </div>
+            <h3>Большой обеденный стол из цельного карагача</h3>
+            <div class="catalog-specs mono-num">320 x 108-130 см</div>
+            <p class="catalog-note">Подстолье из металла «Стандарт» входит в стоимость</p>
+            <div class="catalog-bottom">
+              <span class="catalog-price mono-num">424 000 ₽</span>
+              <button type="button" class="btn btn-outline btn-sm load-sample-btn" data-type="dining" data-wood="karagach" data-resin="none" data-length="320" data-width="118" data-base="trapezoid">
+                Примерить размер
+              </button>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-top">
+              <span class="art-badge mono-num">Арт. 2035</span>
+              <span class="stock-badge">В наличии</span>
+            </div>
+            <h3>Большой стол из слэба бука № 2</h3>
+            <div class="catalog-specs mono-num">282 x 110-120 см</div>
+            <p class="catalog-note">Подстолье из металла «Стандарт» входит в стоимость</p>
+            <div class="catalog-bottom">
+              <span class="catalog-price mono-num">381 000 ₽</span>
+              <button type="button" class="btn btn-outline btn-sm load-sample-btn" data-type="dining" data-wood="oak" data-resin="none" data-length="280" data-width="115" data-base="u-shape">
+                Примерить размер
+              </button>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-top">
+              <span class="art-badge mono-num">Арт. 2072</span>
+              <span class="stock-badge">В наличии</span>
+            </div>
+            <h3>Большой стол из слэба платана</h3>
+            <div class="catalog-specs mono-num">303 x 88-96 см</div>
+            <p class="catalog-note">Подстолье из металла «Стандарт» входит в стоимость</p>
+            <div class="catalog-bottom">
+              <span class="catalog-price mono-num">387 000 ₽</span>
+              <button type="button" class="btn btn-outline btn-sm load-sample-btn" data-type="dining" data-wood="poplar" data-resin="none" data-length="305" data-width="92" data-base="trapezoid">
+                Примерить размер
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="process-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Регламент производства Owl-Wood</div>
+            <h2>Как мы выполняем заказ</h2>
+          </div>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card">
+            <div class="process-num mono-num">01</div>
+            <h3>Согласование параметров и выбор слэба</h3>
+            <p>Согласовываем размеры, породу, покрытие и заливку. Делаем предварительный расчет, подбираем конкретный слэб в мастерской или по фото и фиксируем итоговую цену.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-num mono-num">02</div>
+            <h3>Оформление договора</h3>
+            <p>Подписываем договор с техническим описанием, сроками и гарантией 12 месяцев. Выставляем счет на предоплату 50% от стоимости заказа.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-num mono-num">03</div>
+            <h3>Столярные и полимерные работы</h3>
+            <p>Запускаем проект в производство. На любом этапе можно приехать на 1-ю Фрезерную или получить фотоотчет. Срок выполнения составляет от 5 до 30 рабочих дней.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-num mono-num">04</div>
+            <h3>Приемка и доставка по России</h3>
+            <p>Согласовываем дату осмотра готового изделия в мастерской, организуем самовывоз или бережную доставку по Москве и регионам после оплаты остатка.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="contacts-section">
+      <div class="container">
+        <div class="contacts-panel">
+          <div class="contacts-info">
+            <div class="section-kicker">Шоурум и производство</div>
+            <h2>Мастерская Owl-Wood в Москве</h2>
+            <p class="contacts-desc">
+              Помимо столов из слэбов, массива и эпоксидной смолы мастерская изготавливает барные стойки, кухонные острова, подстолья, консоли, тумбы, стеллажи и дизайнерские бра из массива дерева.
+            </p>
+            <div class="contacts-list">
+              <div class="contact-item">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <div>
+                  <span class="contact-label">Адрес шоурума и производства</span>
+                  <span class="contact-val">Москва, 1-я Фрезерная ул., 2/1с11</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <div>
+                  <span class="contact-label">Режим работы</span>
+                  <span class="contact-val">Ежедневно с 9:00 до 22:00</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <div>
+                  <span class="contact-label">Телефон</span>
+                  <a class="contact-val mono-num" href="tel:+79646314324">+7 (964) 631-43-24</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <div>
+                  <span class="contact-label">Электронная почта</span>
+                  <a class="contact-val mono-num" href="mailto:zakaz@owl-wood.ru">zakaz@owl-wood.ru</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contacts-assortment">
+            <div class="assortment-title">Направления мастерской</div>
+            <div class="assortment-grid">
+              <div class="assortment-item"><span>Столы из слэба дерева</span><span class="mono-num">353</span></div>
+              <div class="assortment-item"><span>Подстолья из металла и массива</span><span class="mono-num">71</span></div>
+              <div class="assortment-item"><span>Журнальные столы</span><span class="mono-num">41</span></div>
+              <div class="assortment-item"><span>Полки, консоли и тумбы</span><span class="mono-num">32</span></div>
+              <div class="assortment-item"><span>Мебель для бизнеса</span><span class="mono-num">23</span></div>
+              <div class="assortment-item"><span>Барные столы и стойки</span><span class="mono-num">20</span></div>
+              <div class="assortment-item"><span>Эксклюзивные бра</span><span class="mono-num">18</span></div>
+              <div class="assortment-item"><span>Стулья и лавочки</span><span class="mono-num">17</span></div>
+            </div>
+            <div class="assortment-footer">
+              <span>Официальный сайт мастерской:</span>
+              <a href="https://owl-wood.ru" target="_blank" rel="noopener noreferrer">owl-wood.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-note">Интерактивный прототип конфигуратора для мастерской Owl-Wood</p>
+      <div class="footer-links">
+        <span>Москва, 1-я Фрезерная ул., 2/1с11</span>
+        <a class="mono-num" href="tel:+79646314324">+7 (964) 631-43-24</a>
+        <a class="mono-num" href="mailto:zakaz@owl-wood.ru">zakaz@owl-wood.ru</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
